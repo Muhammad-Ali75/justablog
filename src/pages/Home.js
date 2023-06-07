@@ -1,5 +1,5 @@
-import BlogList from "./components/Blog/BlogList";
-import useFetch from "./hooks/useFetch";
+import BlogList from "../components/Blog/BlogList";
+import useFetch from "../hooks/useFetch";
 
 function Home() {
   const {
