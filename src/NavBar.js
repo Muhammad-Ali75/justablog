@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
+
 function NavBar() {
   return (
     <nav className="navbar">
       <h1>Just A Blog</h1>
       <div className="links">
-        <a href="/">Home</a>
-        <a
-          href="/create"
+        <Link to="/">Home</Link>
+        <Link
+          to="/create"
           style={{
             color: "white",
             backgroundColor: "#f1356d",
@@ -14,7 +16,7 @@ function NavBar() {
           }}
         >
           Create Blog
-        </a>
+        </Link>
       </div>
     </nav>
   );
