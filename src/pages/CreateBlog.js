@@ -11,10 +11,15 @@ function CreateBlog() {
       return { ...prevState, [key]: value };
     });
   }
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    console.log("FORM DATA:::", blogData);
+  }
   return (
     <div className="create">
       <h2>Add a new Blog</h2>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label>Blog title:</label>
         <input
           type="text"
