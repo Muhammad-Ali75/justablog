@@ -128,3 +128,19 @@
   border-radius: 8px;
   background: #f1356d;
 }
+
+.not-found h1{
+ font-size:  100px;
+}
+.not-found h2{
+  font-size:  50px;
+ color: #f1356d;
+
+ }
+ .not-found h3{
+  font-size:  25px;
+ }
+ .not-found-link{
+  color: #f1356d;
+
+ }
