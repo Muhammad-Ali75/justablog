@@ -1,6 +1,9 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 import { BallTriangle } from "react-loader-spinner";
+
 function CreateBlog() {
+  const history = useHistory();
   const [isPending, setIsPending] = useState(false);
   const [blogData, setBlogData] = useState({
     title: "",
@@ -22,7 +25,8 @@ function CreateBlog() {
         body: JSON.stringify(blogData),
       }).then(() => {
         setIsPending(false);
-
+        // history.go(-1);
+        history.push("/");
         console.log("POSTed");
       });
     }, 1000);
